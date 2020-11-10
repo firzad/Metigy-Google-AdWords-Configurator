@@ -109,8 +109,8 @@ export function Websites(props) {
 
   return (
     <Grid container direction='column' justify='center'>
-        <Typography variant='h5' className={classes.heading}>
-          <DesktopWindowsOutlinedIcon fontSize="large" style={{ color: "#00a94c", marginRight:"10px" }}/>
+        <Typography variant='h6' className={classes.heading}>
+          <DesktopWindowsOutlinedIcon style={{ color: "#00a94c", marginRight:"10px" }}/>
           <div>Websites</div>
         </Typography>
       <br />
@@ -131,7 +131,7 @@ export function Websites(props) {
         </Paper>
       </Card>
       <Grid container direction='column' justify='center' alignItems='center'>
-        {websites.length ? websites.map((word, index) => (
+        {websites && websites.length ? websites.map((word, index) => (
           <Card className={classes.word} key={index}>
             {word}
             <IconButton variant='outlined' className={classes.clearButton}

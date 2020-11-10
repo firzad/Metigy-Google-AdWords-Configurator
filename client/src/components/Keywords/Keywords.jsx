@@ -103,8 +103,8 @@ export function Keywords(props) {
 
   return (
     <Grid container direction='column' justify='center'>
-        <Typography variant='h5' className={classes.heading}>
-          <LabelOutlinedIcon fontSize="large" style={{ color: "#0284f4", marginRight:"10px" }}/>
+        <Typography variant='h6' className={classes.heading}>
+          <LabelOutlinedIcon style={{ color: "#0284f4", marginRight:"10px" }}/>
           <div>Keywords</div>
         </Typography>
       <br />
@@ -125,7 +125,7 @@ export function Keywords(props) {
         </Paper>
       </Card>
       <Grid container direction='column' justify='center' alignItems='center'>
-        {keywords.length ? keywords.map((word, index) => (
+        {keywords && keywords.length ? keywords.map((word, index) => (
           <Card className={classes.word} key={index}>
             {word}
             <IconButton variant='outlined' className={classes.clearButton}
