@@ -1,10 +1,10 @@
 // import "./app.css";
 import React from 'react';
-import { BaseComponent } from "./../components";
+import { AdwordsConfigurator } from "./../components";
 
 function App() {
   return (
-    <BaseComponent/>
+    <AdwordsConfigurator/>
   );
 }
 

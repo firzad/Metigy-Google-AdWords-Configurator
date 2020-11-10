@@ -1,12 +1,11 @@
 
-CREATE TABLE `sample` (
-  `id` int(255) NOT NULL AUTO_INCREMENT PRIMARY KEY,
-  `name` varchar(100) NOT NULL
+CREATE TABLE `AdwordsConfig` (
+  'userId' int(255) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  'keywords' varchar,
+  'websites' varchar,
+  'settings' varchar
 );
 
 
-INSERT INTO `sample` (`id`, `name`) VALUES
-(1, 'andrew'),
-(2, 'brian'),
-(3, 'charles'),
-(4, 'david');
+INSERT INTO 'AdwordsConfig' ('userId', 'keywords', 'websites') VALUES
+(1, '','', '');
