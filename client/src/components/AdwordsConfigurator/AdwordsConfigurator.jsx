@@ -6,8 +6,6 @@ import axios from "axios";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
-// const dummyData = {};
-
 const useStyles = makeStyles({
   container: {
     textAlign: "center",
@@ -52,27 +50,27 @@ export function AdwordsConfigurator() {
         updateKeywords(loadedKeywords);
         updateWebsites(loadedWebsites);
         updateSettings(loadedSettings);
-        
-        if(data.status === 201) {
-          toast.success("Default Configuration Loaded Successfully!", toastProp);
+
+        if (data.status === 201) {
+          toast.success(
+            "Default Configuration Loaded Successfully!",
+            toastProp
+          );
         } else {
           toast.success("User Configuration Loaded Successfully!", toastProp);
         }
-
       });
   };
 
   const saveConfig = (data) => {
     axios.post("http://localhost:8000/save", data).then((response) => {
       if (response.data) {
-        toast.success("Configuration Saved Successfully!",toastProp);
+        toast.success("Configuration Saved Successfully!", toastProp);
       } else {
         toast.error("Error! Configuration Load Failed", toastProp);
       }
     });
   };
-
-  // loadConfig(userId);
 
   const buttonHandler = (btnAction) => {
     if (btnAction === "EXPORT") {
@@ -93,7 +91,6 @@ export function AdwordsConfigurator() {
       loadConfig(userId);
     }
   };
-  // let output = "";
   return (
     <div>
       <Grid container spacing={4} className={classes.container}>
@@ -110,10 +107,8 @@ export function AdwordsConfigurator() {
             buttonHandler={buttonHandler}
           />
         </Grid>
-        <div style={{minHeight: "100%"}}></div>
       </Grid>
-      <ToastContainer/>
-
+      <ToastContainer />
     </div>
   );
 }

@@ -92,7 +92,7 @@ const useStyles = makeStyles({
     color: "white",
     fontWeight: "bold",
   },
-  input: {
+  inputFields: {
     width: 55,
     color: "white",
     margin: "0px 5px",
@@ -270,7 +270,7 @@ export function Settings(props) {
           <Typography component={"span"} className={classes.formLabel}>
             Wait
             <Input
-              className={classes.input}
+              className={classes.inputFields}
               name="websiteWaitMinutes"
               value={settings.targetSettings.websiteWaitMinutes || ""}
               onChange={(e) => {
@@ -284,7 +284,7 @@ export function Settings(props) {
             />
             minutes
             <Input
-              className={classes.input}
+              className={classes.inputFields}
               name="websiteWaitSeconds"
               value={settings.targetSettings.websiteWaitSeconds || ""}
               onChange={(e) => {
@@ -324,7 +324,7 @@ export function Settings(props) {
         <br />
         <FormGroup row>
           <Input
-            className={classes.input}
+            className={classes.inputFields}
             name="visitPageCount"
             value={settings.targetSettings.visitPageCount || ""}
             onChange={(e) => {
@@ -339,7 +339,7 @@ export function Settings(props) {
           <Typography component={"span"} className={classes.formLabel}>
             Pages
             <Input
-              className={classes.input}
+              className={classes.inputFields}
               name="visitPageMinutes"
               value={settings.targetSettings.visitPageMinutes || ""}
               onChange={(e) => {
@@ -352,7 +352,7 @@ export function Settings(props) {
               }}
             />
             <Input
-              className={classes.input}
+              className={classes.inputFields}
               name="visitPageSeconds"
               value={settings.targetSettings.visitPageSeconds || ""}
               onChange={(e) => {
@@ -372,7 +372,7 @@ export function Settings(props) {
           <Typography component={"span"} className={classes.formLabel}>
             After the operation is complete
             <Input
-              className={classes.input}
+              className={classes.inputFields}
               name="operationMinutes"
               value={settings.targetSettings.operationMinutes || ""}
               onChange={(e) => {
@@ -386,7 +386,7 @@ export function Settings(props) {
             />
             Pages
             <Input
-              className={classes.input}
+              className={classes.inputFields}
               name="operationSeconds"
               value={settings.targetSettings.operationSeconds || ""}
               onChange={(e) => {
@@ -406,7 +406,7 @@ export function Settings(props) {
           <Typography component={"span"} className={classes.formLabel}>
             Target site
             <Input
-              className={classes.input}
+              className={classes.inputFields}
               name="notFoundCount"
               value={settings.targetSettings.notFoundCount || ""}
               onChange={(e) => {
@@ -420,7 +420,7 @@ export function Settings(props) {
             />
             if not found times
             <Input
-              className={classes.input}
+              className={classes.inputFields}
               name="notFoundWait"
               value={settings.targetSettings.notFoundWait || ""}
               onChange={(e) => {
@@ -438,7 +438,7 @@ export function Settings(props) {
         <br />
         <FormGroup row>
           <Input
-            className={classes.input}
+            className={classes.inputFields}
             name="autoResetCount"
             value={settings.targetSettings.autoResetCount || ""}
             onChange={(e) => {
