@@ -28,5 +28,8 @@ Make sure that the following ports are not in use:
 * 8000: Node server
 * 3306: MySQL server
 
+------------------
 
-
+### Special Thanks
+https://dribbble.com/shots/6437663-Google-Adwords-Configurator
+Mehmet Çınar as the UI is based on his design/
