@@ -5,7 +5,3 @@ CREATE TABLE `AdwordsConfig` (
   `websites` varchar(20000),
   `settings` varchar(5000)
 );
-
-
-INSERT INTO `AdwordsConfig` (`userId`, `keywords`, `websites`) VALUES
-(1, '','', '');
