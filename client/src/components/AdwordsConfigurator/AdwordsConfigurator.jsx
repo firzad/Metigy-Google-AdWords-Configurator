@@ -100,7 +100,7 @@ export function AdwordsConfigurator() {
         <Grid item xs={3}>
           <Websites websites={websites} updateWebsites={updateWebsites} />
         </Grid>
-        <Grid item xs={6}>
+        <Grid item xs={6} style={{minHeight:"97vh"}}>
           <Settings
             settings={settings}
             updateSettings={updateSettings}
