@@ -19,18 +19,6 @@ services:
     volumes:
       - ./database/init.sql:/docker-entrypoint-initdb.d/init.sql
 
-  # phpmyadmin:
-  #   depends_on:
-  #     - mysql
-  #   image: phpmyadmin/phpmyadmin
-  #   environment:
-  #     PMA_HOST: mysql
-  #   links:
-  #     - mysql:mysql
-  #   ports:
-  #     - 8080:80
-  #   restart: always
-
   server:
     build: ./server
     depends_on:

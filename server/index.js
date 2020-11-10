@@ -145,7 +145,7 @@ app.get('/load', (req, res) => {
       });
     } else {
       return res.json({
-        status: 200,
+        status: 201,
         data: dummyData,
         message: "Default Config Loaded"
       });

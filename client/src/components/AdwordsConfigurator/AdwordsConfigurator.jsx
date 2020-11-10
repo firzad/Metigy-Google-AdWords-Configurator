@@ -52,8 +52,13 @@ export function AdwordsConfigurator() {
         updateKeywords(loadedKeywords);
         updateWebsites(loadedWebsites);
         updateSettings(loadedSettings);
+        
+        if(data.status === 201) {
+          toast.success("Default Configuration Loaded Successfully!", toastProp);
+        } else {
+          toast.success("User Configuration Loaded Successfully!", toastProp);
+        }
 
-        toast.success("Configuration Loaded Successfully!", toastProp);
       });
   };
 
